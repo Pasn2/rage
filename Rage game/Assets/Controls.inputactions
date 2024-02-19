@@ -7,20 +7,29 @@
             "actions": [
                 {
                     "name": "RightLeft",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "cef8f5fc-27db-49ed-9eda-b1f48eb89237",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Preparing",
+                    "type": "Button",
+                    "id": "20b943a4-328f-4e9c-a453-4f00f8a2e0dc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 },
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "20b943a4-328f-4e9c-a453-4f00f8a2e0dc",
+                    "id": "3585fc02-fc03-43f2-a4b2-eee0f4851769",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": false
                 }
             ],
@@ -62,7 +71,18 @@
                     "name": "",
                     "id": "e11e0ab1-3129-465d-90ab-8d8cd8bf7efc",
                     "path": "<Keyboard>/w",
-                    "interactions": "",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Preparing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5334a6e-7ac3-40be-8ee0-2c28d3420184",
+                    "path": "<Keyboard>/w",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
